@@ -1,0 +1,5 @@
+# Ignore compiled Python bytecode files
+*.pyc
+
+# Ignore system-specific directories
+__pycache__

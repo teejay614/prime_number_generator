@@ -1,21 +1,11 @@
-import sympy
-
-def generate_primes(start, end):
-    # Ensure start is less than or equal to end
-    if start > end:
-        # Swap start and end if they are in reverse order
-        start, end = end, start
-    
-    # Generate prime numbers in the range [start, end]
-    primes = list(sympy.primerange(start, end + 1))
-    
-    return primes
+from prime_generator import PrimeGenerator
 
 def main():
+    prime_gen = PrimeGenerator()
     print("Prime Number Generator!")
     start = int(input("Enter the start point: "))
     end = int(input("Enter the end point: "))
-    primes = generate_primes(start,end)
+    primes = prime_gen.generate_primes(start,end)
     print("Prime numbers between", start, "and", end, ":", primes)
 
 

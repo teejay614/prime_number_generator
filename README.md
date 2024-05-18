@@ -18,6 +18,8 @@ The tests fulfilled the coding challenge of making sure the following requiremen
 
 I also built a test for testing w/ negative numbers which shouldn't return any results.
 
+I also built a test for testing a range that included negative and non negatives integers.
+
 I also built a test for testing w/ non-integer values. I commented it out of the test because it fails due to the fact that the code does not know how to handle when a non-integer value is entered. Since there isn't a requirement to make sure that non-integer values should be handled.
 
 I still created a test that would handle the TypeError being raised when entering non-integer values. Once there is a fix for the TypeError then the test will fail and then will have to adjust the test to match how the app will handle TypeErrors.
